@@ -1,0 +1,26 @@
+1738750344646	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1738750344692	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1738750355327	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1738750389116	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1738750389130	Sync.Service	DEBUG	User-Agent: Firefox/135.0 (Windows NT 10.0; Win64; x64) FxSync/1.137.0.20250130195129.desktop
+1738750389130	Sync.Service	INFO	Starting sync at 2025-02-05 17:13:09 in browser session hZKhevHs7mU7
+1738750389130	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1738750389134	Sync.Status	INFO	Resetting Status.
+1738750389134	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1738750389134	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1738759589997	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1738759590001	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1738759590001	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1738759590001	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1738759590419	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1738759590578	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+1738759590578	Sync.SyncScheduler	DEBUG	Next sync in 2000 ms. (why=wake_notification)
+1738759590644	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1738759590683	Sync.Resource	ERROR	Request timed out after 300000ms. Aborting.
+1738759590683	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/266395372/info/collections failed: AbortError: The operation was aborted.  Stack trace: _doRequest/timeoutId<()@resource://services-sync/resource.sys.mjs:179
+notify()@resource://gre/modules/Timer.sys.mjs:49
+1738759590683	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1738759590683	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1738759590684	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "Request aborted (timeout)"  nsresult: "0x804b000e (NS_ERROR_NET_TIMEOUT)"  location: "JS frame :: resource://services-sync/resource.sys.mjs :: _doRequest :: line 189"  data: no] Stack trace: _doRequest()@resource://services-sync/resource.sys.mjs:189
+1738759590684	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1738759590688	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "Request aborted (timeout)"  nsresult: "0x804b000e (NS_ERROR_NET_TIMEOUT)"  location: "JS frame :: resource://services-sync/resource.sys.mjs :: _doRequest :: line 189"  data: no] Stack trace: _doRequest()@resource://services-sync/resource.sys.mjs:189

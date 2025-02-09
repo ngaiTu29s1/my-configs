@@ -1,0 +1,38 @@
+{
+  "timeStamp": 1739115804180,
+  "version": "1.62.0",
+  "userSettings": {
+    "externalLists": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt\nhttps://raw.githubusercontent.com/gijsdev/ublock-hide-yt-shorts/master/list.txt\nhttps://raw.githubusercontent.com/quenhus/uBlock-Origin-dev-filter/main/dist/all_search_engines/global.txt",
+    "importedLists": [
+      "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt",
+      "https://raw.githubusercontent.com/gijsdev/ublock-hide-yt-shorts/master/list.txt",
+      "https://raw.githubusercontent.com/quenhus/uBlock-Origin-dev-filter/main/dist/all_search_engines/global.txt"
+    ],
+    "popupPanelSections": 15
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-quick-fixes",
+    "ublock-unbreak",
+    "easylist",
+    "easyprivacy",
+    "urlhaus-1",
+    "plowe-0",
+    "VIE-1",
+    "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt",
+    "https://raw.githubusercontent.com/gijsdev/ublock-hide-yt-shorts/master/list.txt",
+    "https://raw.githubusercontent.com/quenhus/uBlock-Origin-dev-filter/main/dist/all_search_engines/global.txt"
+  ],
+  "hiddenSettings": {},
+  "whitelist": [
+    "chrome-extension-scheme",
+    "moz-extension-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
+  "userFilters": "! Block Left Sidebar\nwww.facebook.com##div[role=\"navigation\"]\nwww.facebook.com##div[data-pagelet=\"LeftRail\"]\nwww.facebook.com##div[aria-label=\"Menu\"]\n\n! Block Right Sidebar\nwww.facebook.com##div[role=\"complementary\"]\nwww.facebook.com##div[data-pagelet=\"RightRail\"]"
+}
