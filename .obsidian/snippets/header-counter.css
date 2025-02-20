@@ -1,0 +1,87 @@
+:root {
+	/* ? Changes the number each heading starts counting from, 0 means 1, -1 means 0, ... */
+	--initial: 0;
+
+	/* ? Changes the symbol between the numbers. (Keep the quotation marks!) */
+	--delim: '.';
+
+	/* ? Delete the heading *value* (right side) if you don't want to count it */
+	/* ? For example, if you want to skip Heading 1, keep only this: */
+	--h1-num: ;
+
+	--h1-num: counter(var(--h1)) var(--delim);
+	--h2-num: var(--h1-num) counter(var(--h2)) var(--delim);
+	--h3-num: var(--h2-num) counter(var(--h3)) var(--delim);
+	--h4-num: var(--h3-num) counter(var(--h4)) var(--delim);
+	--h5-num: var(--h4-num) counter(var(--h5)) var(--delim);
+	--h6-num: var(--h5-num) counter(var(--h6)) var(--delim);
+
+	/* Other values */
+	--h1: h1;
+	--h2: h2;
+	--h3: h3;
+	--h4: h4;
+	--h5: h5;
+	--h6: h6;
+}
+
+/* ! Styling here! */
+:is(.cm-header, h1, h2, h3, h4, h5, h6)::before {
+	position: absolute;
+	transform: translateX(calc(-100% - 0.7rem));
+	opacity: 0.5;
+}
+
+.cm-editor {
+	counter-reset: var(--h1) var(--h2) var(--h3) var(--h4) var(--h5) var(--h6);
+}
+
+.cm-header-1::before,
+h1::before {
+	counter-increment: var(--h1);
+	counter-set: var(--h2) var(--initial);
+	content: var(--h1-num);
+}
+
+.cm-header-2::before,
+h2::before {
+	counter-increment: var(--h2);
+	counter-set: var(--h3) var(--initial);
+	content: var(--h2-num);
+}
+
+.cm-header-3::before,
+h3::before {
+	counter-increment: var(--h3);
+	counter-set: var(--h4) var(--initial);
+	content: var(--h3-num);
+}
+
+.cm-header-4::before,
+h4::before {
+	counter-increment: var(--h4);
+	counter-set: var(--h5) var(--initial);
+	content: var(--h4-num);
+}
+
+.cm-header-5::before,
+h5::before {
+	counter-increment: var(--h5);
+	counter-set: var(--h6) var(--initial);
+	content: var(--h5-num);
+}
+
+.cm-header-6::before,
+h6::before {
+	counter-increment: var(--h6);
+	content: var(--h6-num);
+}
+
+/* ? Selectors to prevent double heading from showing up when editing a line */
+.cm-formatting-header::before {
+	display: none;
+}
+
+.cm-formatting-header ~ .cm-header::before {
+	opacity: 0;
+}

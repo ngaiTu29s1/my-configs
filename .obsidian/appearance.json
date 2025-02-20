@@ -1,0 +1,9 @@
+{
+  "enabledCssSnippets": [
+    "custom-header",
+    "header-counter"
+  ],
+  "theme": "system",
+  "baseFontSizeAction": true,
+  "baseFontSize": 16
+}

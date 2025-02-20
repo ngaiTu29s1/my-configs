@@ -1,0 +1,61 @@
+/* --- Editor Section --- */
+.cm-header-1 {
+  margin-left: 0 !important;
+  color: #ff5733 !important; /* Reddish */
+}
+
+.cm-header-2 {
+  margin-left: 20px !important;
+  color: #ffa500 !important; /* Orange */
+}
+
+.cm-header-3 {
+  margin-left: 40px !important;
+  color: #ffd700 !important; /* Gold */
+}
+
+.cm-header-4 {
+  margin-left: 60px !important;
+  color: #32cd32 !important; /* Lime Green */
+}
+
+.cm-header-5 {
+  margin-left: 80px !important;
+  color: #1e90ff !important; /* Dodger Blue */
+}
+
+.cm-header-6 {
+  margin-left: 100px !important;
+  color: #9370db !important; /* Medium Purple */
+}
+
+/* --- Preview Section --- */
+.markdown-preview-view h1 {
+  margin-left: 0 !important;
+  color: #ff5733 !important;
+}
+
+.markdown-preview-view h2 {
+  margin-left: 20px !important;
+  color: #ffa500 !important;
+}
+
+.markdown-preview-view h3 {
+  margin-left: 40px !important;
+  color: #ffd700 !important;
+}
+
+.markdown-preview-view h4 {
+  margin-left: 60px !important;
+  color: #32cd32 !important;
+}
+
+.markdown-preview-view h5 {
+  margin-left: 80px !important;
+  color: #1e90ff !important;
+}
+
+.markdown-preview-view h6 {
+  margin-left: 100px !important;
+  color: #9370db !important;
+}
